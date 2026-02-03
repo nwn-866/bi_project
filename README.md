@@ -58,6 +58,4 @@ Key Insights for Sanford Aquaculture Analytics
 - Salmon has gained more average price per kg.
 - mussels fallen into more products.
 
-- 
-
 
