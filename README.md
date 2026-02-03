@@ -21,6 +21,9 @@ The design emphasises **data quality, profiling, and clarity**, ensuring insight
 
 ## Repository Structure
 
+## 📁 Repository Structure
+
+```text
 sanford_analytics/
 │
 ├── data/
@@ -51,10 +54,12 @@ sanford_analytics/
 │   └── *.pbix                 # Power BI dashboard files
 │
 ├── logs/
-│   └── ingestion_logs/        # Optional runtime logs (if enabled)
+│   └── ingestion_logs/        # Optional runtime logs
 │
 ├── .gitignore
-└── README.md                  # Project overview & documentation
+└── README.md                  # Project documentation
+```
+
 
 
 
@@ -79,14 +84,14 @@ Invalid or unexpected files are automatically **rejected and logged**.
 
 ## Architecture Overview
 The solution follows a modern, modular analytics architecture:
-
+```
 CSV Files
 → Python Ingestion (incremental, audited)
 → PostgreSQL (Docker / Bronze layer)
 → dbt Transformations (Silver & Gold layers)
 → Star Schema , built on gold layer
 → Power BI Reporting
-
+```
 
 ---
 
