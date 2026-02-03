@@ -1,0 +1,12 @@
+sanford_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: sanford
+      password: sanford
+      dbname: sanford_dwh
+      schema: aquaculture
+      threads: 4

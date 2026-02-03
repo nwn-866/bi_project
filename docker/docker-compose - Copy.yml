@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: sanford_postgres
+    environment:
+      POSTGRES_DB: sanford_dwh
+      POSTGRES_USER: sanford
+      POSTGRES_PASSWORD: sanford
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - "C:/Users/nwn86/OneDrive/sanford_share:/data"
+
+volumes:
+  pgdata:
