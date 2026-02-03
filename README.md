@@ -20,39 +20,42 @@ The design emphasises **data quality, profiling, and clarity**, ensuring insight
 ---
 
 ## Repository Structure
+
 sanford_analytics/
 │
 ├── data/
-│ ├── input/ # Source CSV files (FY23–FY25)
-│ ├── processed/ # Successfully ingested files
-│ └── reject/ # Rejected or invalid files
+│   ├── input/                 # Source CSV files (FY23–FY25)
+│   ├── processed/             # Successfully ingested files
+│   └── reject/                # Rejected or invalid files
 │
 ├── docker/
-│ └── docker-compose.yml # PostgreSQL container configuration
+│   └── docker-compose.yml     # PostgreSQL container configuration
 │
 ├── scripts/
-│ └── sanford_export_raw_data_ingest.py
-│ # Python script for incremental CSV ingestion
+│   └── sanford_export_raw_data_ingest.py
+│                               # Python script for incremental CSV ingestion
 │
 ├── sanford_dbt/
-│ ├── models/
-│ │ ├── silver/ # Staging and standardisation models
-│ │ └── gold/ # Star schema (facts and dimensions)
-│ ├── macros/ # dbt macros
-│ ├── packages.yml # dbt package dependencies
-│ └── dbt_project.yml # dbt project configuration
+│   ├── models/
+│   │   ├── silver/            # Staging & standardisation models
+│   │   └── gold/              # Star schema (facts & dimensions)
+│   │
+│   ├── macros/                # dbt macros
+│   ├── packages.yml           # dbt package dependencies
+│   └── dbt_project.yml        # dbt project configuration
 │
 ├── sql/
-│ └── schema_setup.sql # Database schema and table creation scripts
+│   └── schema_setup.sql       # Database schema & table creation scripts
 │
 ├── power_bi/
-│ └── *.pbix # Power BI dashboard files
+│   └── *.pbix                 # Power BI dashboard files
 │
 ├── logs/
-│ └── ingestion_logs/ # Optional runtime logs
+│   └── ingestion_logs/        # Optional runtime logs (if enabled)
 │
 ├── .gitignore
-└── README.md # Project documentation
+└── README.md                  # Project overview & documentation
+
 
 
 ---
