@@ -48,7 +48,7 @@ sanford_analytics/
 │   └── dbt_project.yml        # dbt project configuration
 │
 ├── sql/
-│   └── schema_setup.sql       # Database schema & table creation scripts
+│   └── sql_file.sql       # Database schema & table creation scripts
 │
 ├── power_bi/
 │   └── *.pbix                 # Power BI dashboard files
