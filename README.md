@@ -52,10 +52,14 @@ It reflects Sanford’s emphasis on data quality, transparency, and practical de
 
 Key Insights for Sanford Aquaculture Analytics
 - UNITED STATES and CHINA amoung overall key markert in terms of average price per kg and total export value(nzd).
-- SOUTH KOREA and UNITED STATES amoung the key markert drive for average value per kg and related to product category Preserved
+- SOUTH KOREA and UNITED STATES amoung the key markert drive for average value per kg and related to product category Preserved.
+- French Polynesia having highest demand in pricing strategy. 
 - Processed Packed and Processed Powder have broght more total export value(nzd).
 - Frozen Half Shell has more total export value(nzd).
 - Salmon has gained more average price per kg.
 - mussels fallen into more products.
+
+More
+- can integrate iso_3166 standardised country data set for more insight into regional spred.
 
 
